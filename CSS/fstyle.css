@@ -1,0 +1,222 @@
+/* .flex{
+    display: flex;
+} */
+:root{  /*css variable mdn*/
+    --main-bg-color:#2874f0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+header{
+    background-color: #2874f0;
+    position: sticky;
+    top:0;
+}
+nav{
+    height: 10vh;
+   
+    display: flex;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    padding: 0 18px;
+    
+}
+.searchbox{
+    display: flex;
+    align-items: center;
+
+    
+}
+.search{
+    position: relative;
+    display: inline;
+
+}
+.search input{
+    width: 493px;
+    height: 23px;
+    border-radius: 3px;
+    margin: 0 0 0 50px;
+    padding: 6px 12px;
+    border-right: none;
+
+    
+}
+.search .btn_search{
+    position: relative;
+    right: 55px;
+    background-color: white;
+    width: 46px;
+    height: 23px;
+    cursor: pointer;
+    padding: 7px 0 24px 0;
+
+}
+.login{
+    text-decoration:none;
+    position: relative;
+    left: -15px;
+    height: 23px;
+    background-color: white;
+    margin: 20px 20px 0 20px;
+    color:#2874f0;
+    padding: 3px 30px;
+    letter-spacing: 1px;
+    font-size: 20px; 
+    cursor: pointer;
+
+}
+.pp{
+    text-decoration: none;
+    color: #2874f0;
+}
+.more, .cart{
+    position: relative;
+    display: flex;
+   align-items: center;
+    left:55px;
+    color: white;
+    font-weight: bold;
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.heading-items ul.heading-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+}
+.himg{
+    height: 64px;
+    width: 64px;
+    margin-bottom: 3px;
+}
+.hname{
+    
+    padding: 12px 8px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.h-product:hover{
+    color: #2874f0;
+
+}
+.slider{
+    display: flex;
+      justify-content: center; 
+      overflow: hidden;
+      height:320px;
+      background-color: rgb(233, 227, 227);
+      
+}
+.cimg{
+    height: 300px;
+    width: 100%;
+    margin: 12px 30px;
+}
+/*  copied*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease; 
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  /* Place the "forward button" to the right */
+  .next {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  /*when the user hovers,add a black background with some little opacity */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  .card{
+    max-width: 91vw;
+    margin: 37px auto;
+  
+
+ }
+ .cards{
+    display: flex;
+    flex-direction: row;
+      overflow: scroll;     /* justify-content: center;  */
+}
+
+.card_item{
+    width: 180px;
+    height: 240px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 22px;
+
+ }
+ .card_item img{
+    height:140px;
+    transition: .1s;
+ }
+ .card_item:hover{
+    cursor: pointer;
+    
+ }
+ .card_item img:hover{
+    transform: scale(1.2);
+ }
+ 
+  p.my1
+  {
+    font-weight:550;
+    margin: 8px;
+  }
+  p.my2{
+    color: rgb(47, 123, 47);    margin: 8px;
+
+  }
+  p.my3{
+    color: grey;
+  }
+  HR{
+ /* position: relative;
+top: 20PX; */
+background-color:rgb(227, 223, 223); 
+height: 12PX;
+border: none;
+}
+  
+footer{
+    height: 7vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+
